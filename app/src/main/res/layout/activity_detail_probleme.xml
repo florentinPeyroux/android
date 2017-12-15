@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.flo.gestionduparcvert.activity.AjouterActivity">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="13dp"
+        android:text="Detail du problème :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/labelType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titre"
+        android:layout_alignStart="@+id/titre"
+        android:layout_below="@+id/titre"
+        android:layout_marginTop="18dp"
+        android:text="Type :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Un type"
+        android:layout_below="@+id/labelType"
+        android:layout_alignLeft="@+id/labelAdresse"
+        android:layout_alignStart="@+id/labelAdresse"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/labelAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelType"
+        android:layout_alignStart="@+id/labelType"
+        android:layout_below="@+id/type"
+        android:layout_marginTop="20dp"
+        android:text="Adresse :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/adresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/type"
+        android:layout_alignStart="@+id/type"
+        android:layout_below="@+id/labelAdresse"
+        android:layout_marginTop="20dp"
+        android:text="Une adresse" />
+
+    <TextView
+        android:id="@+id/labelDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelAdresse"
+        android:layout_alignStart="@+id/labelAdresse"
+        android:layout_below="@+id/adresse"
+        android:layout_marginTop="27dp"
+        android:text="Description :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adresse"
+        android:layout_alignStart="@+id/adresse"
+        android:layout_below="@+id/labelDescription"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/boutonSupprimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="61dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:text="Supprimer"
+        android:onClick="supprimer"
+        />
+
+    <Button
+        android:id="@+id/boutonLocaliser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/boutonSupprimer"
+        android:layout_alignBottom="@+id/boutonSupprimer"
+        android:layout_toEndOf="@+id/labelAdresse"
+        android:layout_toRightOf="@+id/labelAdresse"
+        android:text="Localiser"
+        android:onClick="localiser"
+        />
+
+
+</RelativeLayout>

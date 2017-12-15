@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.flo.gestionduparcvert.MainActivity">
+    <item
+        android:id="@+id/action_genererBDD"
+        android:orderInCategory="100"
+        android:title="@string/action_genererBDD"
+        app:showAsAction="never" />
+</menu>
